@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="backoffice:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="77c688c3-85e7-4dc5-95b8-ceb15513f4b7" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/SignalementServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#869#870#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/SignalementService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/ResponsableRegionDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/AssignementController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="71" column="153" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="153" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/AssignSignalement.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/SignalementDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/SignalementDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/DisplaySearch.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="8" selection-end-line="22" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/Signalement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1684#1685#0" expanded="true" />
+                <element signature="e#1720#1721#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Assigner.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>);</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Christian-Mandresy &lt;89293572+christian-mandresy@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="main" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="Christian-Mandresy" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="ProjetCloud" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/InsertRespRegController.java" />
+        <option value="$USER_HOME$/Downloads/dataJan-10-2022.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/SignalEtRegionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/SignalEtRegionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/SignalEtRegionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/SignalEtRegionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FormulaireInsertRespController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/conf/HibernateConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/BackofficeApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/SignalEtRegion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/SignalEtRegionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatistiqueCriteriaRegionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatistiqueCriteriaRegionImplDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/Type.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/Status.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatusDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/TypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/StatusDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/TypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/TypeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/StatusService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/StatusServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatusDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/TypeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/DisplayStatistique.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatistiqueCriteriaRegionDaoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/StatistiqueController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/StatGlobaleDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/StatGlobaleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/StatGlobaleService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/FormStat.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/StatGlobale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatGlobaleDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FormulaireStatistique.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/StatistiqueCriteriaRegionServiceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/FormSearch.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FindController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FormulaireRechercheController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatistiqueCriteriaRegionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/DisplaySearch.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/00dca063-8988-4ff8-beb7-4dde9f13f90e/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/DataTest.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/Signalement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/SignalementDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/SignalementService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/Assigner.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/SignalementDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/SignalementServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/AssignementController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/AssignSignalement.jsp" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-70" />
+    <option name="y" value="173" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="PackagesPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="backoffice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backoffice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backoffice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backoffice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backoffice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+              <item name="conf" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+              <item name="controller" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+              <item name="dao" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+              <item name="dao" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+              <item name="model" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="com.cloudproject.backoffice" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="sql" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="backoffice" type="58d84e3e:PackageViewProjectNode" />
+              <item name="backoffice" type="616d4139:PackageViewModuleNode" />
+              <item name="templates" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/TP10_formulaires_springMVC_validation/TP10_formulaires_springMVC_validation" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.41264367" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.cloudproject.backoffice" />
+      <recent name="com.cloudproject" />
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cloudproject.backoffice.service" />
+      <recent name="com.cloudproject.backoffice.dao" />
+      <recent name="com.cloudproject.backoffice.dao.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Spring\cloudproject\backoffice\src\main\resources\templates" />
+      <recent name="F:\Spring\cloudproject\backoffice\src\main\java\com\cloudproject\backoffice" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.461">
+    <configuration name="BackofficeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="backoffice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloudproject.backoffice.BackofficeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.461" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.461" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/backoffice_war/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="backoffice:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/backoffice_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_backoffice" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56749" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="backoffice:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.BackofficeApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.461" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77c688c3-85e7-4dc5-95b8-ceb15513f4b7" name="Default Changelist" comment="" />
+      <created>1641457646026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641457646026</updated>
+      <workItem from="1641457649070" duration="6879000" />
+      <workItem from="1641540613884" duration="253000" />
+      <workItem from="1641540906712" duration="23544000" />
+      <workItem from="1641569976605" duration="1602000" />
+      <workItem from="1641576841446" duration="7760000" />
+      <workItem from="1641586428726" duration="5275000" />
+      <workItem from="1641619492955" duration="2718000" />
+      <workItem from="1641625617993" duration="523000" />
+      <workItem from="1641658538545" duration="9615000" />
+      <workItem from="1641706995553" duration="9818000" />
+      <workItem from="1641727386379" duration="21939000" />
+      <workItem from="1641793212195" duration="25939000" />
+      <workItem from="1641840639879" duration="16421000" />
+      <workItem from="1641885331162" duration="9157000" />
+      <workItem from="1641912560186" duration="28425000" />
+      <workItem from="1641962629122" duration="3070000" />
+      <workItem from="1641973971261" duration="26765000" />
+      <workItem from="1642016292806" duration="5107000" />
+      <workItem from="1642062418995" duration="2254000" />
+      <workItem from="1642358093247" duration="7619000" />
+    </task>
+    <task id="LOCAL-00001" summary="Ito architecture anle projet de efa misy exemple ana controller sy vue.&#10;Efa misy ny dependance maven mysql">
+      <created>1641544783915</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641544783916</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Exemple complet manomboka any @service hatramin ny DAO sy ny controlleur ary ny vue">
+      <created>1641625947965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641625947965</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Configuration hibernate antsika tsy nampiasa application.properties ah fa tsy mety ilay izy">
+      <created>1641796270499</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641796270499</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Manampoitra anle formulaire">
+      <created>1641796361526</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1641796361526</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Manao traitement anle formulaire de mapiasa validator mba hanaovana verification anle donnée ana formulaire mamerina message de success raha mety le verification">
+      <created>1641796825740</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641796825740</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Mapiasa hibernate hangalana anle donnée ao amin ny dao">
+      <created>1641796949430</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641796949430</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Mampiasa annotation amle validator de annotation amle hibernate">
+      <created>1641797014098</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1641797014098</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Manala variable Test">
+      <created>1641797067603</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1641797067603</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ilay mapper tsy hilaina tsony satria mivadika hibernate">
+      <created>1641797098851</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1641797098851</updated>
+    </task>
+    <task id="LOCAL-00010" summary="nanampy modification anle vue mba hampiseho anle message d'erreur na success">
+      <created>1641797154988</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641797154988</updated>
+    </task>
+    <task id="LOCAL-00011" summary="manampy dependance hilaina amle hibernate sy ilay validator an i Spring">
+      <created>1641797184835</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1641797184835</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Data test misy 50 utilisateur sy 3 type de signalement ,etat de signalement de 100 signalement">
+      <created>1641806253122</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1641806253146</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Nanampy table anambarana anomezana region anle signalement (75)&#10;&#10;Data test misy 50 utilisateur sy 3 type de signalement ,etat de signalement de 100 signalement">
+      <created>1641814685078</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1641814685078</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Nanampy anle vue ilaiko amin ny statistique&#10;&#10;Nanampy table anambarana anomezana region anle signalement (75)&#10;&#10;Data test misy 50 utilisateur sy 3 type de signalement ,etat de signalement de 100 signalement">
+      <created>1641823809413</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1641823809413</updated>
+    </task>
+    <task id="LOCAL-00015" summary="correction ana bug ato amin ny conf&#10;(delete na table automatique :) )">
+      <created>1641894383536</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641894383568</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Formulaire anaovana statistique misy critère">
+      <created>1641942647731</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1641942647732</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Traitement anle formulaire statistique">
+      <created>1641942735407</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1641942735408</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Modification kely">
+      <created>1641942761236</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1641942761236</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Entite ilaina amle angalana ny liste anreo amle formulaire statistique">
+      <created>1641942825097</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1641942825097</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Maka liste anreto any amin ny base">
+      <created>1641942878159</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1641942878159</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Mappage anle vue amin ny statistique">
+      <created>1641942909326</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1641942909326</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Manao access base sy maka anle statistique en fonction anle critère anle olona">
+      <created>1641942968059</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1641942968059</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Service anle entite rehetra ilaina @statistique">
+      <created>1641943012447</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1641943012447</updated>
+    </task>
+    <task id="LOCAL-00024" summary="vue hilaina ny iray formulaire de ny iray mampiseho valiny">
+      <created>1641943068765</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1641943068765</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Misy niova kely ny base">
+      <created>1641943120607</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1641943120607</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Voafafa de niverina nalaina">
+      <created>1641943146044</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1641943146044</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Nanampy gestion ana session&#10;&#10;session close">
+      <created>1641966258420</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1641966258421</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Nanampy gestion ana fonctionnalite vitsivitsy&#10;&#10;afaka manao choix ana date na tsy">
+      <created>1641966314396</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1641966314396</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Manampy statistique globale eo amin ilay page formulaire statistique">
+      <created>1641978711420</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1641978711420</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Acces base momban ny statistique globale&#10;&#10;-par region&#10;-par type&#10;-par status">
+      <created>1641978765943</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1641978765943</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Model StatGlobale angalana statistique de type rehetra any @ base avy eo">
+      <created>1641978804536</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1641978804536</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Service stat globale">
+      <created>1641978825753</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1641978825753</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Modification anle vue hilaina&#10;lasa nampiana anarana colonne ilay nombreSignalement(count)">
+      <created>1641978871653</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1641978871653</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Modification anle formulaire mba hisy stat globale">
+      <created>1641978898331</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1641978898331</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Correction ana erreur kely">
+      <created>1641979677400</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1641979677400</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Correction ana erreur kely">
+      <created>1641979851351</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1641979851351</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Correction ana erreur kely">
+      <created>1641980006729</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1641980006729</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Formulaire de recherche sy ny traitement any&#10;/FormSearch ilay lien formulaire">
+      <created>1641992746970</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1641992746970</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Niampy anle rechercheCritere fotsiny ilay dao">
+      <created>1641992814665</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1641992814665</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Nampiana ny fonction miantso anle recherche fotsiny">
+      <created>1641992859749</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1641992859749</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Ireto avy ny vue&#10;formulaire sy display anle valiny">
+      <created>1641992898612</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1641992898612</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Modif kely amin ilay géocodage inversée">
+      <created>1642365521560</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1642365521560</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="214683000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23676248" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.32850242" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993559" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32850242" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32850242" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32850242" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32850242" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32850242" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32850242" />
+      <window_info anchor="bottom" id="Database Changes" order="14" weight="0.32850242" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.32850242" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.3188406" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.041603632" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Formulaire anaovana statistique misy critère" />
+    <MESSAGE value="Traitement anle formulaire statistique" />
+    <MESSAGE value="Modification kely" />
+    <MESSAGE value="Entite ilaina amle angalana ny liste anreo amle formulaire statistique" />
+    <MESSAGE value="Maka liste anreto any amin ny base" />
+    <MESSAGE value="Mappage anle vue amin ny statistique" />
+    <MESSAGE value="Manao access base sy maka anle statistique en fonction anle critère anle olona" />
+    <MESSAGE value="Service anle entite rehetra ilaina @statistique" />
+    <MESSAGE value="vue hilaina ny iray formulaire de ny iray mampiseho valiny" />
+    <MESSAGE value="Misy niova kely ny base" />
+    <MESSAGE value="Voafafa de niverina nalaina" />
+    <MESSAGE value="Nanampy gestion ana session&#10;&#10;session close" />
+    <MESSAGE value="Nanampy gestion ana fonctionnalite vitsivitsy&#10;&#10;afaka manao choix ana date na tsy" />
+    <MESSAGE value="Manampy statistique globale eo amin ilay page formulaire statistique" />
+    <MESSAGE value="Acces base momban ny statistique globale&#10;&#10;-par region&#10;-par type&#10;-par status" />
+    <MESSAGE value="Model StatGlobale angalana statistique de type rehetra any @ base avy eo" />
+    <MESSAGE value="Service stat globale" />
+    <MESSAGE value="Modification anle vue hilaina&#10;lasa nampiana anarana colonne ilay nombreSignalement(count)" />
+    <MESSAGE value="Modification anle formulaire mba hisy stat globale" />
+    <MESSAGE value="Correction ana erreur kely" />
+    <MESSAGE value="Formulaire de recherche sy ny traitement any&#10;/FormSearch ilay lien formulaire" />
+    <MESSAGE value="Niampy anle rechercheCritere fotsiny ilay dao" />
+    <MESSAGE value="Nampiana ny fonction miantso anle recherche fotsiny" />
+    <MESSAGE value="Ireto avy ny vue&#10;formulaire sy display anle valiny" />
+    <MESSAGE value="Modif kely amin ilay géocodage inversée" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modif kely amin ilay géocodage inversée" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FormulaireInsertRespController.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FormulaireInsertRespController.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/StatistiqueController.java</url>
+          <line>93</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/AssignementController.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="node.get(&quot;features&quot;)" language="JAVA" />
+        <watch expression="((String)((TextNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)((ArrayList)((ArrayNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)node)._children).entrySet().toArray()[1]).getValue())._children).get(0))._children).entrySet().toArray()[1]).getValue())._children).entrySet().toArray()[3]).getValue())._value).value" language="JAVA" custom="java.util.LinkedHashMap.Entry,java.lang.String,com.fasterxml.jackson.databind.node.ArrayNode,com.fasterxml.jackson.databind.node.ObjectNode,java.util.LinkedHashMap,com.fasterxml.jackson.databind.node.TextNode,java.util.ArrayList" />
+        <watch expression="node.get(&quot;results&quot;)" language="JAVA" />
+        <watch expression="node.get(&quot;results&quot;).get(0).get(&quot;state&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>node.get(&quot;results&quot;).get(0).get(&quot;state&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.get(&quot;results&quot;).get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.get(&quot;results&quot;)[0]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.get(&quot;results&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>feat.get(&quot;name&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.get(&quot;name&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.get(&quot;features&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.get(&quot;features&quot;).get(&quot;properties&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>node.get(&quot;features&quot;).get(&quot;0&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>((String)((TextNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)((ArrayList)((ArrayNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)node)._children).entrySet().toArray()[1]).getValue())._children).get(0))._children).entrySet().toArray()[1]).getValue())._children).entrySet().toArray()[3]).getValue())._value).value</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.util.LinkedHashMap.Entry,java.lang.String,com.fasterxml.jackson.databind.node.ArrayNode,com.fasterxml.jackson.databind.node.ObjectNode,java.util.LinkedHashMap,com.fasterxml.jackson.databind.node.TextNode,java.util.ArrayList</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((LinkedHashMap)((ObjectNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)((ArrayList)((ArrayNode)((LinkedHashMap.Entry)((LinkedHashMap)((ObjectNode)node)._children).entrySet().toArray()[1]).getValue())._children).get(0))._children).entrySet().toArray()[1]).getValue())._children).entrySet().toArray()[3]</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.fasterxml.jackson.databind.node.ObjectNode,java.util.LinkedHashMap,java.util.LinkedHashMap.Entry,java.util.ArrayList,com.fasterxml.jackson.databind.node.ArrayNode</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.56/tomcat-embed-core-9.0.56.jar!/org/apache/catalina/valves/AbstractAccessLogValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.56/tomcat-embed-core-9.0.56.jar!/org/apache/catalina/valves/ErrorReportValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.56/tomcat-embed-core-9.0.56.jar!/org/apache/catalina/core/StandardHostValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.56/tomcat-embed-core-9.0.56.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="205" column="16" selection-start-line="205" selection-start-column="16" selection-end-line="205" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.56/tomcat-embed-core-9.0.56.jar!/org/apache/catalina/core/StandardContextValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_291/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1148" selection-start-line="1148" selection-end-line="1148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.56/tomcat-embed-core-9.0.56.jar!/org/apache/tomcat/util/net/SocketProcessorBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.56/tomcat-embed-core-9.0.56.jar!/org/apache/tomcat/util/net/NioEndpoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="495" selection-start-line="495" selection-end-line="495" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/InsertRespRegController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="35" column="69" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/FormRespRegion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/StatusServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/StatGlobaleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/StatGlobaleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/RegionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/StatGlobaleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/StatistiqueCriteriaRegionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/FormStat.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="46" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/StatistiqueCriteriaRegionServiceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="96" lean-forward="true" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/DisplayStatistique.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatistiqueCriteriaRegionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/NonAssigner.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/ResponsableRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/StatGlobale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/StatistiqueCriteriaRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatusDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/DataTest.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="365" column="23" selection-start-line="365" selection-start-column="12" selection-end-line="365" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/TypeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/StatGlobaleDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="47" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FormulaireRechercheController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FormulaireStatistique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/TraitementAssign.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/00dca063-8988-4ff8-beb7-4dde9f13f90e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/StatistiqueController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/ResponsableRegionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/ResponsableRegionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/conf/HibernateConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/FormSearch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="101" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/FindController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="88" column="52" selection-start-line="87" selection-start-column="7" selection-end-line="88" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/ResponsableRegionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="26" column="92" selection-start-line="26" selection-start-column="92" selection-end-line="26" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/Assigner.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/SignalementDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/impl/SignalementServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/service/SignalementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/DisplaySearch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/dao/impl/SignalementDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/controller/AssignementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="71" column="153" lean-forward="true" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="153" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudproject/backoffice/model/Signalement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+            <element signature="e#1720#1721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/AssignSignalement.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql:mysql-connector-java:8.0.26</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.41264367" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
