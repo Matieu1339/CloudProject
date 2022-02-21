@@ -5,6 +5,7 @@
  */
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.Signalement;
 import com.cloudproject.backoffice.model.Utilisateur;
 import com.cloudproject.backoffice.service.SignalementService;
@@ -29,6 +30,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class DeleteUtilisateur {
+
     private UtilisateurService userServ;
     private SignalementService signServ;
 
@@ -41,27 +43,31 @@ public class DeleteUtilisateur {
     public void setSignServ(SignalementService signServ) {
         this.signServ = signServ;
     }
-    
+
     @RequestMapping(value = "/DeleteUtilisateur", method = RequestMethod.POST)
     public String deleteRespReg(@ModelAttribute("Utilisateur") @Validated Utilisateur Utilisateur,
             BindingResult bindingResult, Model modelMap, HttpServletRequest request) {
-        
-        List<Signalement> allSign = signServ.getAllSign();
-        for(int i=0;i<allSign.size();i++){
-            if(allSign.get(i).getIdUtilisateur()==Integer.parseInt(request.getParameter("IdUtilisateur"))){
-                signServ.updateSignalement(allSign.get(i).getIdSignalement(), null, allSign.get(i).getIdType(), allSign.get(i).getIdStatus(), allSign.get(i).getDescriptionSignalement(), allSign.get(i).getLongitude(), allSign.get(i).getLatitude(), allSign.get(i).getDateHeureSignalement());
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.addAttribute("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            List<Signalement> allSign = signServ.getAllSign();
+            for (int i = 0; i < allSign.size(); i++) {
+                if (allSign.get(i).getIdUtilisateur() == Integer.parseInt(request.getParameter("IdUtilisateur"))) {
+                    signServ.updateSignalement(allSign.get(i).getIdSignalement(), null, allSign.get(i).getIdType(), allSign.get(i).getIdStatus(), allSign.get(i).getDescriptionSignalement(), allSign.get(i).getLongitude(), allSign.get(i).getLatitude(), allSign.get(i).getDateHeureSignalement());
+                }
             }
+
+            userServ.DeleteUtilisateur(Integer.parseInt(request.getParameter("IdUtilisateur")));
+
+            List<Utilisateur> listUtil = userServ.getAllUtilisateur();
+
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+            modelMap.addAttribute("nomAdmin", nomAdmin);
+            modelMap.addAttribute("Utilisateur", new Utilisateur());
+            modelMap.addAttribute("listUtilisateur", listUtil);
+            return "modifUtilisateur";
         }
-        
-        userServ.DeleteUtilisateur(Integer.parseInt(request.getParameter("IdUtilisateur")));
-        
-        List<Utilisateur> listUtil = userServ.getAllUtilisateur();
-        
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        modelMap.addAttribute("nomAdmin", nomAdmin);
-        modelMap.addAttribute("Utilisateur",new Utilisateur());
-        modelMap.addAttribute("listUtilisateur", listUtil);
-        return "modifUtilisateur";
     }
 }

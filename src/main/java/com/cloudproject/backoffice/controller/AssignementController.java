@@ -1,5 +1,6 @@
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.service.SignalementService;
 import com.cloudproject.backoffice.service.StatusService;
 import com.cloudproject.backoffice.service.TypeService;
@@ -43,44 +44,58 @@ public class AssignementController {
 
     @RequestMapping("/FormAssign")
     public String list(Map<String, Object> modelMap, HttpServletRequest request) {
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        modelMap.put("nomAdmin", nomAdmin);
-        modelMap.put("ListSign", signalementService.getNonAssigner());
-        modelMap.put("ListType", typeService.geType());
-        modelMap.put("ListStatus", statusService.getStatus());
-        return "Assigner";
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.put("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+            modelMap.put("nomAdmin", nomAdmin);
+            modelMap.put("ListSign", signalementService.getNonAssigner());
+            modelMap.put("ListType", typeService.geType());
+            modelMap.put("ListStatus", statusService.getStatus());
+            return "Assigner";
+        }
     }
 
     @RequestMapping(value = "/Assign", method = RequestMethod.GET)
     public String Assignement(Model model, HttpServletRequest request) throws IOException {
-        RestTemplate restTemplate = new RestTemplate();
-        Map<String, String> vars = new HashMap<>();
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            model.addAttribute("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            RestTemplate restTemplate = new RestTemplate();
+            Map<String, String> vars = new HashMap<>();
 
-        vars.put("Long", request.getParameter("Long"));
-        vars.put("Lat", request.getParameter("Lat"));
+            vars.put("Long", request.getParameter("Long"));
+            vars.put("Lat", request.getParameter("Lat"));
 
-        int Id = Integer.parseInt(request.getParameter("Id"));
+            int Id = Integer.parseInt(request.getParameter("Id"));
 
-        String result = restTemplate
-                .getForObject(
-                        "https://api.geoapify.com/v1/geocode/reverse?lat={Lat}&lon={Long}&type=state&format=json&apiKey=0ffb5ea7d4164bb28ea3e65e4f417062",
-                        String.class, vars);
+            String result = restTemplate
+                    .getForObject(
+                            "https://api.geoapify.com/v1/geocode/reverse?lat={Lat}&lon={Long}&type=state&format=json&apiKey=0ffb5ea7d4164bb28ea3e65e4f417062",
+                            String.class, vars);
 
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            JsonNode node = mapper.readTree(result);
-            String region = node.get("results").get(0).get("state").asText();
-            model.addAttribute("region", region);
-            model.addAttribute("Signalement", signalementService.getSign(Id));
-            model.addAttribute("ListType", typeService.geType());
-            model.addAttribute("ListStatus", statusService.getStatus());
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            ObjectMapper mapper = new ObjectMapper();
+            try {
+                JsonNode node = mapper.readTree(result);
+                String nomAdmin = (String) sess.getAttribute("nomAdmin");
+                String region = node.get("results").get(0).get("state").asText();
+
+                model.addAttribute("nomAdmin", nomAdmin);
+                model.addAttribute("region", region);
+                model.addAttribute("Signalement", signalementService.getSign(Id));
+                model.addAttribute("ListType", typeService.geType());
+                model.addAttribute("ListStatus", statusService.getStatus());
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+
+            int inty = 0;
+            return "AssignSignalement";
         }
-
-        int inty = 0;
-        return "AssignSignalement";
     }
 
 }

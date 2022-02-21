@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-@CrossOrigin(origins = "http://localhost:8080", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:8081/backoffice", maxAge = 3600)
 @RequestMapping("/signalement/*")
 public class SignalementRestController {
     private SignalementService signalementService;

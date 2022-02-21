@@ -1,5 +1,6 @@
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.ResponsableRegion;
 import com.cloudproject.backoffice.service.RegionService;
 import com.cloudproject.backoffice.service.ResponsableRegionService;
@@ -34,25 +35,29 @@ public class InsertRespRegController {
     @RequestMapping(value = "/insertResp", method = RequestMethod.POST)
     public String insertResp(@ModelAttribute("ResponsableRegion") @Validated ResponsableRegion responsableRegion,
             BindingResult bindingResult, Model model, HttpServletRequest request) {
-        if (bindingResult.hasErrors()) {
-            HttpSession sess = request.getSession();
-            String nomAdmin = (String) sess.getAttribute("nomAdmin");
-
-            model.addAttribute("nomAdmin", nomAdmin);
-            model.addAttribute("ResponsableRegion", responsableRegion);
-            model.addAttribute("ListRegion", regionService.getRegion());
-            return "FormRespRegion";
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            model.addAttribute("Administrateur",new Administrateur());
+            return "index";
         } else {
-            responsableRegionService.insertResp(Integer.parseInt(request.getParameter("idRegion")), request.getParameter("Nom"), request.getParameter("Prenom"), request.getParameter("Email"), request.getParameter("MotDePasse"));
+            if (bindingResult.hasErrors()) {
+                String nomAdmin = (String) sess.getAttribute("nomAdmin");
 
-            HttpSession sess = request.getSession();
-            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+                model.addAttribute("nomAdmin", nomAdmin);
+                model.addAttribute("ResponsableRegion", responsableRegion);
+                model.addAttribute("ListRegion", regionService.getRegion());
+                return "FormRespRegion";
+            } else {
+                responsableRegionService.insertResp(Integer.parseInt(request.getParameter("idRegion")), request.getParameter("Nom"), request.getParameter("Prenom"), request.getParameter("Email"), request.getParameter("MotDePasse"));
 
-            model.addAttribute("nomAdmin", nomAdmin);
-            model.addAttribute("ResponsableRegion", responsableRegion);
-            model.addAttribute("ListRegion", regionService.getRegion());
-            model.addAttribute("success", "insertion reussie");
-            return "FormRespRegion";
+                String nomAdmin = (String) sess.getAttribute("nomAdmin");
+
+                model.addAttribute("nomAdmin", nomAdmin);
+                model.addAttribute("ResponsableRegion", responsableRegion);
+                model.addAttribute("ListRegion", regionService.getRegion());
+                model.addAttribute("success", "insertion reussie");
+                return "FormRespRegion";
+            }
         }
 
     }

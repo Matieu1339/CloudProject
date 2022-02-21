@@ -5,6 +5,7 @@
  */
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.Region;
 import com.cloudproject.backoffice.model.ResponsableRegion;
 import com.cloudproject.backoffice.service.RegionService;
@@ -27,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class DeleteResp {
+
     private RegionService regServ;
     private ResponsableRegionService respReg;
 
@@ -43,20 +45,24 @@ public class DeleteResp {
     @RequestMapping(value = "/DeleteRespReg", method = RequestMethod.POST)
     public String deleteRespReg(@ModelAttribute("ResponsableRegion") @Validated ResponsableRegion responsableRegion,
             BindingResult bindingResult, Model modelMap, HttpServletRequest request) {
-        
-        respReg.deleteRespReg(Integer.parseInt(request.getParameter("IdResponsable")));
-        
-        List<Region> newRegionList = regServ.getRegion();
-        List<ResponsableRegion> newResponsableList = respReg.findRespReg();
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.addAttribute("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            respReg.deleteRespReg(Integer.parseInt(request.getParameter("IdResponsable")));
 
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        
-        modelMap.addAttribute("nomAdmin", nomAdmin);
-        modelMap.addAttribute("ResponsableRegion", new ResponsableRegion());
-        modelMap.addAttribute("listRespReg", newResponsableList);
-        modelMap.addAttribute("listRegion", newRegionList);
+            List<Region> newRegionList = regServ.getRegion();
+            List<ResponsableRegion> newResponsableList = respReg.findRespReg();
 
-        return "modifRespReg";
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+
+            modelMap.addAttribute("nomAdmin", nomAdmin);
+            modelMap.addAttribute("ResponsableRegion", new ResponsableRegion());
+            modelMap.addAttribute("listRespReg", newResponsableList);
+            modelMap.addAttribute("listRegion", newRegionList);
+
+            return "modifRespReg";
+        }
     }
 }

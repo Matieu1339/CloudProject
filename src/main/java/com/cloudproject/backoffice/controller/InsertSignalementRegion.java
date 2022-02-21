@@ -1,10 +1,11 @@
- /*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.Region;
 import com.cloudproject.backoffice.service.RegionService;
 import com.cloudproject.backoffice.service.SignalementRegionService;
@@ -31,6 +32,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class InsertSignalementRegion {
+
     SignalementRegionService signServ;
     SignalementService signalementService;
     TypeService typeService;
@@ -62,39 +64,43 @@ public class InsertSignalementRegion {
         this.signServ = signServ;
     }
 
-    @RequestMapping(value ="/insertSign", method = RequestMethod.POST)
-    public String insertSign(Map<String, Object> modelMap, HttpServletRequest request) throws ParseException{
-        
-        String idSignalement=request.getParameter("IdSignalement");
-        String NomRegion=request.getParameter("NomRegion");
-        
-        List<Region> listReg=regServ.getRegionNom(NomRegion);
-        Region retourRegion=listReg.get(0);
-        
-        System.out.println(idSignalement);
-        System.out.println(NomRegion);
-        System.out.println(retourRegion.getIdRegion());
-        
-        Date date = new Date();
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
-        String strDate = dateFormat.format(date);  
-        
-        //Date finalDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(strDate);
-        Date finalDate = new Date();
-        finalDate=dateFormat.parse(strDate);
-        
-        System.out.println(finalDate);
-        
-        signServ.insertSignalementRegion(Integer.parseInt(idSignalement), retourRegion.getIdRegion(), finalDate);
-        
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        
-        modelMap.put("nomAdmin", nomAdmin);
-        modelMap.put("ListSign", signalementService.getNonAssigner());
-        modelMap.put("ListType", typeService.geType());
-        modelMap.put("ListStatus", statusService.getStatus());
-        
-        return "Assigner";
+    @RequestMapping(value = "/insertSign", method = RequestMethod.POST)
+    public String insertSign(Map<String, Object> modelMap, HttpServletRequest request) throws ParseException {
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.put("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            String idSignalement = request.getParameter("IdSignalement");
+            String NomRegion = request.getParameter("NomRegion");
+
+            List<Region> listReg = regServ.getRegionNom(NomRegion);
+            Region retourRegion = listReg.get(0);
+
+            System.out.println(idSignalement);
+            System.out.println(NomRegion);
+            System.out.println(retourRegion.getIdRegion());
+
+            Date date = new Date();
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String strDate = dateFormat.format(date);
+
+            //Date finalDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(strDate);
+            Date finalDate = new Date();
+            finalDate = dateFormat.parse(strDate);
+
+            System.out.println(finalDate);
+
+            signServ.insertSignalementRegion(Integer.parseInt(idSignalement), retourRegion.getIdRegion(), finalDate);
+
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+
+            modelMap.put("nomAdmin", nomAdmin);
+            modelMap.put("ListSign", signalementService.getNonAssigner());
+            modelMap.put("ListType", typeService.geType());
+            modelMap.put("ListStatus", statusService.getStatus());
+
+            return "Assigner";
+        }
     }
 }

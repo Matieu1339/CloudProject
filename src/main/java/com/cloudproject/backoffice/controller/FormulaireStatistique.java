@@ -1,5 +1,6 @@
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.StatistiqueCriteriaRegion;
 import com.cloudproject.backoffice.service.RegionService;
 import com.cloudproject.backoffice.service.StatGlobaleService;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 public class FormulaireStatistique {
+
     private TypeService typeService;
     private StatusService statusService;
     private RegionService regionService;
@@ -41,21 +43,24 @@ public class FormulaireStatistique {
     }
 
     @RequestMapping("/FormStatistique")
-    public String initForm(Map<String, Object> modelMap, HttpServletRequest request)
-    {
-        StatistiqueCriteriaRegion stat=new StatistiqueCriteriaRegion();
-        
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        
-        modelMap.put("nomAdmin", nomAdmin);
-        modelMap.put("Statistique",stat);
-        modelMap.put("ListRegion",regionService.getRegion());
-        modelMap.put("ListType",typeService.geType());
-        modelMap.put("ListStatus",statusService.getStatus());
-        modelMap.put("ListStatRegion",statGlobaleService.getStatRegion());
-        modelMap.put("ListStatType",statGlobaleService.getStatType());
-        modelMap.put("ListStatStatus",statGlobaleService.getStatStatus());
-        return "FormStat";
+    public String initForm(Map<String, Object> modelMap, HttpServletRequest request) {
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.put("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            StatistiqueCriteriaRegion stat = new StatistiqueCriteriaRegion();
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+
+            modelMap.put("nomAdmin", nomAdmin);
+            modelMap.put("Statistique", stat);
+            modelMap.put("ListRegion", regionService.getRegion());
+            modelMap.put("ListType", typeService.geType());
+            modelMap.put("ListStatus", statusService.getStatus());
+            modelMap.put("ListStatRegion", statGlobaleService.getStatRegion());
+            modelMap.put("ListStatType", statGlobaleService.getStatType());
+            modelMap.put("ListStatStatus", statGlobaleService.getStatStatus());
+            return "FormStat";
+        }
     }
 }

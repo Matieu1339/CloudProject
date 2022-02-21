@@ -5,6 +5,7 @@
  */
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.Utilisateur;
 import com.cloudproject.backoffice.service.UtilisateurService;
 import java.text.ParseException;
@@ -26,26 +27,32 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class ModifUtilisateur {
+
     private UtilisateurService userServ;
 
     @Autowired
     public void setUserServ(UtilisateurService userServ) {
         this.userServ = userServ;
     }
-    
+
     @RequestMapping(value = "/UpdateUtilisateur", method = RequestMethod.POST)
     public String updateUtilisateur(@ModelAttribute("Utilisateur") @Validated Utilisateur utilisateur,
-            BindingResult bindingResult, Model modelMap, HttpServletRequest request) throws ParseException{
-        userServ.UpdateUtilisateur(Integer.parseInt(request.getParameter("IdUtilisateur")), request.getParameter("Nom"), request.getParameter("Prenom"), request.getParameter("DateNaissance"), request.getParameter("Email"), request.getParameter("MotDePasse"), request.getParameter("Sexe"), request.getParameter("Contact"));
-        
-        List<Utilisateur> listUtil = userServ.getAllUtilisateur();
-        
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        
-        modelMap.addAttribute("nomAdmin", nomAdmin);
-        modelMap.addAttribute("Utilisateur",new Utilisateur());
-        modelMap.addAttribute("listUtilisateur", listUtil);
-        return "modifUtilisateur";
+            BindingResult bindingResult, Model modelMap, HttpServletRequest request) throws ParseException {
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.addAttribute("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            userServ.UpdateUtilisateur(Integer.parseInt(request.getParameter("IdUtilisateur")), request.getParameter("Nom"), request.getParameter("Prenom"), request.getParameter("DateNaissance"), request.getParameter("Email"), request.getParameter("MotDePasse"), request.getParameter("Sexe"), request.getParameter("Contact"));
+
+            List<Utilisateur> listUtil = userServ.getAllUtilisateur();
+
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+
+            modelMap.addAttribute("nomAdmin", nomAdmin);
+            modelMap.addAttribute("Utilisateur", new Utilisateur());
+            modelMap.addAttribute("listUtilisateur", listUtil);
+            return "modifUtilisateur";
+        }
     }
 }

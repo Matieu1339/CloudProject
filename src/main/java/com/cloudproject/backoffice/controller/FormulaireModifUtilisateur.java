@@ -5,6 +5,7 @@
  */
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.Utilisateur;
 import com.cloudproject.backoffice.service.UtilisateurService;
 import java.util.List;
@@ -19,26 +20,31 @@ import org.springframework.web.bind.annotation.GetMapping;
  *
  * @author samko
  */
-
 @Controller
 public class FormulaireModifUtilisateur {
+
     private UtilisateurService userServ;
 
     @Autowired
     public void setUserServ(UtilisateurService userServ) {
         this.userServ = userServ;
     }
-    
+
     @GetMapping("/modifUtilisateur")
-    public String listUtilisateur(Map modelMap, HttpServletRequest request){
-        List<Utilisateur> listUtil = userServ.getAllUtilisateur();
-        
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        
-        modelMap.put("nomAdmin", nomAdmin);
-        modelMap.put("Utilisateur",new Utilisateur());
-        modelMap.put("listUtilisateur", listUtil);
-        return "modifUtilisateur";
+    public String listUtilisateur(Map modelMap, HttpServletRequest request) {
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.put("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            List<Utilisateur> listUtil = userServ.getAllUtilisateur();
+
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+
+            modelMap.put("nomAdmin", nomAdmin);
+            modelMap.put("Utilisateur", new Utilisateur());
+            modelMap.put("listUtilisateur", listUtil);
+            return "modifUtilisateur";
+        }
     }
 }

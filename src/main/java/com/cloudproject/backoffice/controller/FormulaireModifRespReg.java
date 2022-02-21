@@ -5,6 +5,7 @@
  */
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.Region;
 import com.cloudproject.backoffice.model.ResponsableRegion;
 import com.cloudproject.backoffice.service.RegionService;
@@ -39,17 +40,22 @@ public class FormulaireModifRespReg {
 
     @GetMapping("/FormModifRespReg")
     public String afficheRespReg(Map modelMap, HttpServletRequest request) {
-        List<Region> regionList = regServ.getRegion();
-        List<ResponsableRegion> responsableList = respReg.findRespReg();
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.put("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            List<Region> regionList = regServ.getRegion();
+            List<ResponsableRegion> responsableList = respReg.findRespReg();
 
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        
-        modelMap.put("nomAdmin", nomAdmin);
-        modelMap.put("ResponsableRegion", new ResponsableRegion());
-        modelMap.put("listRespReg", responsableList);
-        modelMap.put("listRegion", regionList);
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
 
-        return "modifRespReg";
+            modelMap.put("nomAdmin", nomAdmin);
+            modelMap.put("ResponsableRegion", new ResponsableRegion());
+            modelMap.put("listRespReg", responsableList);
+            modelMap.put("listRegion", regionList);
+
+            return "modifRespReg";
+        }
     }
 }

@@ -5,6 +5,7 @@
  */
 package com.cloudproject.backoffice.controller;
 
+import com.cloudproject.backoffice.model.Administrateur;
 import com.cloudproject.backoffice.model.Region;
 import com.cloudproject.backoffice.model.ResponsableRegion;
 import com.cloudproject.backoffice.service.RegionService;
@@ -44,33 +45,38 @@ public class ModifResp {
     @RequestMapping(value = "/UpdateRespReg", method = RequestMethod.POST)
     public String UpdateResponsableRegion(@ModelAttribute("ResponsableRegion") @Validated ResponsableRegion responsableRegion,
             BindingResult bindingResult, Model modelMap, HttpServletRequest request) {
-        List<Region> regionList = regServ.getRegion();
-        List<ResponsableRegion> responsableList = respReg.findRespReg();
+        HttpSession sess=request.getSession(false);
+        if(sess.getAttribute("IdAdmin")==null){
+            modelMap.addAttribute("Administrateur",new Administrateur());
+            return "index";
+        } else {
+            List<Region> regionList = regServ.getRegion();
+            List<ResponsableRegion> responsableList = respReg.findRespReg();
 
-        for (Integer i = 0; i < regionList.size(); i++) {
-            if (regionList.get(i).getNomRegion().equals(request.getParameter("IdRegion"))) {
-                /*System.out.println(i);
+            for (Integer i = 0; i < regionList.size(); i++) {
+                if (regionList.get(i).getNomRegion().equals(request.getParameter("IdRegion"))) {
+                    /*System.out.println(i);
                 System.out.println(regionList.get(i).getNomRegion());
                 System.out.println(request.getParameter("IdRegion"));*/
-                
-                respReg.updateRespReg(Integer.parseInt(request.getParameter("IdResponsable")), ((regionList.get(i).getIdRegion()) - 1), request.getParameter("Nom"), request.getParameter("Prenom"), request.getParameter("Email"), request.getParameter("MotDePasse"));
-                System.out.println(regionList.get(i).getIdRegion() - 1);
-            } else {
 
+                    respReg.updateRespReg(Integer.parseInt(request.getParameter("IdResponsable")), ((regionList.get(i).getIdRegion()) - 1), request.getParameter("Nom"), request.getParameter("Prenom"), request.getParameter("Email"), request.getParameter("MotDePasse"));
+                    System.out.println(regionList.get(i).getIdRegion() - 1);
+                } else {
+
+                }
             }
+
+            List<Region> newRegionList = regServ.getRegion();
+            List<ResponsableRegion> newResponsableList = respReg.findRespReg();
+
+            String nomAdmin = (String) sess.getAttribute("nomAdmin");
+
+            modelMap.addAttribute("nomAdmin", nomAdmin);
+            modelMap.addAttribute("ResponsableRegion", new ResponsableRegion());
+            modelMap.addAttribute("listRespReg", newResponsableList);
+            modelMap.addAttribute("listRegion", newRegionList);
+
+            return "modifRespReg";
         }
-
-        List<Region> newRegionList = regServ.getRegion();
-        List<ResponsableRegion> newResponsableList = respReg.findRespReg();
-
-        HttpSession sess = request.getSession();
-        String nomAdmin = (String) sess.getAttribute("nomAdmin");
-        
-        modelMap.addAttribute("nomAdmin", nomAdmin);
-        modelMap.addAttribute("ResponsableRegion", new ResponsableRegion());
-        modelMap.addAttribute("listRespReg", newResponsableList);
-        modelMap.addAttribute("listRegion", newRegionList);
-
-        return "modifRespReg";
     }
 }
