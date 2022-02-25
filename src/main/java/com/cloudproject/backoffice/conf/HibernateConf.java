@@ -30,9 +30,9 @@ public class HibernateConf {
     public DataSource dataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
-        dataSourceBuilder.url("jdbc:mysql://localhost:3306/cloud");
-        dataSourceBuilder.username("root");
-        dataSourceBuilder.password("");
+        dataSourceBuilder.url("jdbc:mysql://db4free.net:3306/cloudproject");
+        dataSourceBuilder.username("cloudadmin1234");
+        dataSourceBuilder.password("mdpcloudadmin");
         return dataSourceBuilder.build();
     }
 
